@@ -20,8 +20,8 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20221231105127" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20221231105127">
 	<title>CREATEX</title>
 </head>
 
@@ -73,9 +73,10 @@
 		<div class="hero__wrapper">
 			<div class="hero__left">
 				<div class="hero__showreel">
-					<a href="https://www.youtube.com/watch?v=1ekZEVeXwek&list=RDxnyxbg_bgOM&index=4&ab_channel=ArianaGrandeVevo" data-fancybox class="hero__play">
+					<a href="https://www.youtube.com/watch?v=1ekZEVeXwek&list=RDxnyxbg_bgOM&index=4&ab_channel=ArianaGrandeVevo"
+						data-fancybox class="hero__play">
 						<svg width="52" height="52" viewBox="0 0 52 52">
-							<circle class="circle" cx="26" cy="26" r="26"/>
+							<circle class="circle" cx="26" cy="26" r="26" />
 							<path
 								d="M32.5 25.134C33.1667 25.5189 33.1667 26.4811 32.5 26.866L23.5 32.0622C22.8333 32.4471 22 31.966 22 31.1962L22 20.8038C22 20.034 22.8333 19.5529 23.5 19.9378L32.5 25.134Z"
 								fill="white" />
@@ -89,7 +90,7 @@
 					<a href="#!" class="hero__btn btn">Explore courses</a>
 				</div>
 			</div>
-			<div class="hero__img"><img src="img/hero/illustration.png" alt="Carton illustration"></div>
+			<div class="hero__img"><picture><source srcset="img/hero/illustration.webp" type="image/webp"><img src="img/hero/illustration.png" alt="Carton illustration"></picture></div>
 		</div>
 		<div class="hero__info">
 			<ul class="hero__list">
@@ -101,12 +102,27 @@
 		</div>
 	</div>
 </section>
+<div class="modal none">
+	<div class="modal__container">
+		<h3 class="modal__title">Log In</h3>
+		<p class="modal__subtitle">New user? Create an <a href="!#">account</a></p>
+		<fieldset class="modal__inputs">
+			<div class="modal__email">
+				<input type="email" placeholder="Email">
+			</div>
+			<div class="modal__password">
+				<input type="password" placeholder="Password">
+			</div>
+		</fieldset>
+		<button class="modal__btn btn" type="submit">Log In</button>
+	</div>
+</div>
 		</main>
 		<footer></footer>
 	</div>
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20221231105127"></script>
+<script src="js/script.js?_v=20221231105127"></script>
 
 </html>

@@ -26,8 +26,25 @@ overaly.addEventListener('click', () => {
 
 document.addEventListener('keydown', (e) => {
 	if (e.code === 'Escape') {
-	nav.classList.remove('header__nav--active');
-	body.classList.remove('js-scroll');
-	overaly.style.display = 'none';
+		nav.classList.remove('header__nav--active');
+		body.classList.remove('js-scroll');
+		overaly.style.display = 'none';
+		modal.classList.add('none')
+	}
+});
+
+//modal
+
+const logIn = document.querySelector('.header__login'),
+	modal = document.querySelector('.modal');
+
+logIn.addEventListener('click', () => {
+	modal.classList.remove('none')
+});
+
+modal.addEventListener('click', (e) => {
+	const target = event.target;
+	if (target && target.classList.contains('modal')) {
+		modal.classList.add('none')
 	}
 });
