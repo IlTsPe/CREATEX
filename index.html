@@ -20,8 +20,8 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20221231105127" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20221231105127">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20230101175632" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230101175632">
 	<title>CREATEX</title>
 </head>
 
@@ -35,7 +35,7 @@
 			<nav class="header__nav">
 				<ul class="header__list">
 					<li class="header__item">
-						<a href="#!" class="header__link">About Us</a>
+						<a href="#about" class="header__link">About Us</a>
 					</li>
 					<li class="header__item">
 						<a href="#!" class="header__link">Courses</a>
@@ -68,7 +68,7 @@
 
 </header>
 		<main class="main">
-			<section class="hero">
+			<section class="hero" id="hero">
 	<div class="container">
 		<div class="hero__wrapper">
 			<div class="hero__left">
@@ -86,18 +86,18 @@
 				</div>
 				<h1 class="hero__title">Enjoy studying with Createx Online Courses</h1>
 				<div class="hero__btns">
-					<a href="#!" class="hero__btn btn-nobg">About Us</a>
+					<a href="#about" class="hero__btn btn-nobg">About Us</a>
 					<a href="#!" class="hero__btn btn">Explore courses</a>
 				</div>
 			</div>
 			<div class="hero__img"><picture><source srcset="img/hero/illustration.webp" type="image/webp"><img src="img/hero/illustration.png" alt="Carton illustration"></picture></div>
 		</div>
-		<div class="hero__info">
-			<ul class="hero__list">
-				<li class="hero__item"><span>1200</span>Students graduated</li>
-				<li class="hero__item"><span>84</span>Completed courses</li>
-				<li class="hero__item"><span>16</span>Qualified tutors</li>
-				<li class="hero__item"><span>5</span>Years of experience</li>
+		<div class="hero__info info-block">
+			<ul class="hero__list info-block_list">
+				<li class="hero__item info-block_item"><span>1200</span>Students graduated</li>
+				<li class="hero__item info-block_item"><span>84</span>Completed courses</li>
+				<li class="hero__item info-block_item"><span>16</span>Qualified tutors</li>
+				<li class="hero__item info-block_item"><span>5</span>Years of experience</li>
 			</ul>
 		</div>
 	</div>
@@ -105,7 +105,7 @@
 <div class="modal none">
 	<div class="modal__container">
 		<h3 class="modal__title">Log In</h3>
-		<p class="modal__subtitle">New user? Create an <a href="!#">account</a></p>
+		<p class="modal__subtitle">New user? Create an <a href="!#" class="modal__link">account</a></p>
 		<fieldset class="modal__inputs">
 			<div class="modal__email">
 				<input type="email" placeholder="Email">
@@ -115,14 +115,52 @@
 			</div>
 		</fieldset>
 		<button class="modal__btn btn" type="submit">Log In</button>
+		<p class="modal__forgot">Forgot your password? <a href="!#" class="modal__link">Get it back!</a></p>
+		<div class="close close__modal">
+			<span></span>
+			<span></span>
+		</div>
 	</div>
 </div>
+			<section class="about" id="about">
+	<div class="about__container container">
+		<div class="about__top">
+			<div class="about__content">
+				<p class="about__subtitle subtitle">About us</p>
+				<h2 class="about__title title">Createx Online School</h2>
+				<p class="about__descr-bold descr-bold">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts.</p>
+				<p class="about__text text">We provide relevant approaches to online learning, internships and employment in the largest companies in the country. Our educational programs help you get a new specialty from scratch. During your studies, we will help you find a job. Check the courses and online events that we organise.</p>
+				<div class="about__btns">
+					<a href="#!" class="about__btn btn-nobg">Explore events</a>
+					<a href="#!" class="about__btn btn">Browse courses</a>
+				</div>
+			</div>
+			<picture><source srcset="img/about/illustration.webp" type="image/webp"><img src="img/about/illustration.png" alt="Человек за компьютером, иллюстрация" class="about__img"></picture>
+		</div>
+		<div class="about__bottom">
+			<picture><source srcset="img/about/image.webp" type="image/webp"><img src="img/about/image.jpg" alt="Человек за компьютером"></picture>
+			<div class="about__info info-block">
+				<ul class="about__list info-block_list">
+					<li class="about__item info-block_item"><span>1200</span>Students graduated</li>
+					<li class="about__item info-block_item"><span>84</span>Completed courses</li>
+					<li class="about__item info-block_item"><span>16</span>Qualified tutors</li>
+					<li class="about__item info-block_item"><span>5</span>Years of experience</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
 		</main>
 		<footer></footer>
 	</div>
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20221231105127"></script>
-<script src="js/script.js?_v=20221231105127"></script>
+<a href="#hero" class="pageup">
+	<img src="img/icons/up.svg" alt="up">
+</a>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js?_v=20230101175632"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20230101175632"></script>
+<script src="js/script.js?_v=20230101175632"></script>
 
 </html>
