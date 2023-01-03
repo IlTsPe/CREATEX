@@ -108,15 +108,15 @@ const team = new Swiper('.team__slider', {
 			slidesPerView: 1,
 		},
 		450: {
-		  slidesPerView: 2,
+			slidesPerView: 2,
 		},
 		650: {
-		  slidesPerView: 3,
+			slidesPerView: 3,
 		},
 		900: {
-		  slidesPerView: 4,
+			slidesPerView: 4,
 		},
-	  }
+	}
 });
 
 //!swiper2----------
@@ -144,12 +144,26 @@ if (products) {
 				el.setAttribute('data-index', index);
 				imagePagination.innerHTML += `<li class="pagination__item ${index == 0 ? 'pagination-active' : ''}" data-index="${index}"></li>`;
 				el.addEventListener('mouseenter', (e) => {
-					currentProduct.querySelectorAll('.pagination__item').forEach(el => {el.classList.remove('pagination-active')});
+					currentProduct.querySelectorAll('.pagination__item').forEach(el => { el.classList.remove('pagination-active') });
 					currentProduct.querySelector(`.pagination__item[data-index="${e.currentTarget.dataset.index}"]`).classList.add('pagination-active');
 				});
 
-	
+
 			});
 		}
 	});
 }
+
+//!accordion----------
+
+
+const btn = document.querySelectorAll('[data-name="accordeon-title"]');
+
+btn.forEach((i) => {
+	i.addEventListener('click', function () {
+		this.nextElementSibling.classList.toggle('hidden');
+		this.classList.toggle('active')
+	});
+});
+
+
