@@ -20,8 +20,8 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20230101175632" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20230101175632">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20230103163355" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230103163355">
 	<title>CREATEX</title>
 </head>
 
@@ -38,7 +38,7 @@
 						<a href="#about" class="header__link">About Us</a>
 					</li>
 					<li class="header__item">
-						<a href="#!" class="header__link">Courses</a>
+						<a href="#teach" class="header__link">Courses</a>
 					</li>
 					<li class="header__item">
 						<a href="#!" class="header__link">Events</a>
@@ -58,14 +58,18 @@
 		</div>
 		<div class="header__right">
 			<button class="header__btn btn">Get consultation</button>
-			<button class="header__login">Log in&nbsp;/ Register</button>
+			<button class="header__login">
+				<svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" fill="#424551">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M9.00019 1.70866C7.38936 1.70866 6.08353 3.0145 6.08353 4.62533C6.08353 6.23616 7.38936 7.54199 9.00019 7.54199C10.611 7.54199 11.9169 6.23616 11.9169 4.62533C11.9169 3.0145 10.611 1.70866 9.00019 1.70866ZM4.41686 4.62533C4.41686 2.09402 6.46889 0.0419922 9.00019 0.0419922C11.5315 0.0419922 13.5835 2.09402 13.5835 4.62533C13.5835 7.15663 11.5315 9.20866 9.00019 9.20866C6.46889 9.20866 4.41686 7.15663 4.41686 4.62533Z" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M4.08691 11.7087C3.50914 11.7087 3.05755 11.99 2.87424 12.3942C2.62053 12.9536 2.39078 13.6196 2.33656 14.2513C2.31233 14.5337 2.43006 14.7418 2.5923 14.8426C3.44993 15.3753 5.43719 16.292 9.00019 16.292C12.5632 16.292 14.5505 15.3753 15.4081 14.8426C15.5703 14.7418 15.6881 14.5337 15.6638 14.2513C15.6096 13.6196 15.3799 12.9536 15.1261 12.3942C14.9428 11.99 14.4912 11.7087 13.9135 11.7087H4.08691ZM1.35639 11.7058C1.86301 10.5887 2.99428 10.042 4.08691 10.042H13.9135C15.0061 10.042 16.1374 10.5887 16.644 11.7058C16.935 12.3474 17.2472 13.2099 17.3244 14.1088C17.3946 14.9273 17.0544 15.7819 16.2876 16.2583C15.1596 16.959 12.8665 17.9587 9.00019 17.9587C5.13386 17.9587 2.84078 16.959 1.71283 16.2583C0.945947 15.7819 0.605747 14.9273 0.676001 14.1088C0.753149 13.2099 1.0654 12.3474 1.35639 11.7058Z"/>
+					</svg>
+					<p>Log in&nbsp;/ Register</p>
+			</button>
 		</div>
 		<div class="burger">
 			<span></span><span></span><span></span>
 		</div>
 	</div>
-	<div class="e"></div>
-
 </header>
 		<main class="main">
 			<section class="hero" id="hero">
@@ -87,7 +91,7 @@
 				<h1 class="hero__title">Enjoy studying with Createx Online Courses</h1>
 				<div class="hero__btns">
 					<a href="#about" class="hero__btn btn-nobg">About Us</a>
-					<a href="#!" class="hero__btn btn">Explore courses</a>
+					<a href="#teach" class="hero__btn btn">Explore courses</a>
 				</div>
 			</div>
 			<div class="hero__img"><picture><source srcset="img/hero/illustration.webp" type="image/webp"><img src="img/hero/illustration.png" alt="Carton illustration"></picture></div>
@@ -105,7 +109,7 @@
 <div class="modal none">
 	<div class="modal__container">
 		<h3 class="modal__title">Log In</h3>
-		<p class="modal__subtitle">New user? Create an <a href="!#" class="modal__link">account</a></p>
+		<p class="modal__subtitle">New user? Create an <a href="#!" class="modal__link">account</a></p>
 		<fieldset class="modal__inputs">
 			<div class="modal__email">
 				<input type="email" placeholder="Email">
@@ -115,14 +119,15 @@
 			</div>
 		</fieldset>
 		<button class="modal__btn btn" type="submit">Log In</button>
-		<p class="modal__forgot">Forgot your password? <a href="!#" class="modal__link">Get it back!</a></p>
+		<p class="modal__forgot">Forgot your password? <a href="#!" class="modal__link">Get it back!</a></p>
 		<div class="close close__modal">
 			<span></span>
 			<span></span>
 		</div>
 	</div>
 </div>
-			<section class="about" id="about">
+			<div class="bg-about">
+				<section class="about" id="about">
 	<div class="about__container container">
 		<div class="about__top">
 			<div class="about__content">
@@ -132,13 +137,14 @@
 				<p class="about__text text">We provide relevant approaches to online learning, internships and employment in the largest companies in the country. Our educational programs help you get a new specialty from scratch. During your studies, we will help you find a job. Check the courses and online events that we organise.</p>
 				<div class="about__btns">
 					<a href="#!" class="about__btn btn-nobg">Explore events</a>
-					<a href="#!" class="about__btn btn">Browse courses</a>
+					<a href="#teach" class="about__btn btn">Browse courses</a>
 				</div>
 			</div>
-			<picture><source srcset="img/about/illustration.webp" type="image/webp"><img src="img/about/illustration.png" alt="Человек за компьютером, иллюстрация" class="about__img"></picture>
+			<img src="img/about/illustration.png" alt="A man at a computer, illustration
+			" class="about__img">
 		</div>
 		<div class="about__bottom">
-			<picture><source srcset="img/about/image.webp" type="image/webp"><img src="img/about/image.jpg" alt="Человек за компьютером"></picture>
+			<picture><source srcset="img/about/image.webp" type="image/webp"><img src="img/about/image.jpg" alt="A man at a computer"></picture>
 			<div class="about__info info-block">
 				<ul class="about__list info-block_list">
 					<li class="about__item info-block_item"><span>1200</span>Students graduated</li>
@@ -150,6 +156,596 @@
 		</div>
 	</div>
 </section>
+				<section class="teach" id="teach">
+	<div class="container">
+		<div class="teach__header center-header">
+			<p class="teach__subtitle subtitle">our main directions</p>
+			<h2 class="teach__title title">What do we teach</h2>
+		</div>
+		<ul class="teach__tabs">
+			<li class="teach__tab teach__tab-active"><button>All</button></li>
+			<li class="teach__tab"><button>Marketing</button></li>
+			<li class="teach__tab"><button>Management</button></li>
+			<li class="teach__tab"><button>HR & Recruting</button></li>
+			<li class="teach__tab"><button>Design</button></li>
+			<li class="teach__tab"><button>Development</button></li>
+		</ul>
+		<ul class="teach__cards cards cards__active">
+			<li class="cards__item">
+				<picture><source srcset="img/teach/card1.webp" type="image/webp"><img src="img/teach/card1.jpg" alt="Paper clips on a pink background"></picture>
+				<div class="cards__item-wrapper">
+					<h6 class="cards__title cards__title-mar">Marketing</h6>
+					<p class="cards__descr">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
+						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+					<div class="cards__link">
+						<a href="#!" class="cards__link">
+							<p>Check courses</p>
+							<picture><source srcset="img/teach/arrow-right.webp" type="image/webp"><img src="img/teach/arrow-right.png" alt="Left arrow"></picture>
+						</a>
+					</div>
+				</div>
+			</li>
+			<li class="cards__item">
+				<picture><source srcset="img/teach/card2.webp" type="image/webp"><img src="img/teach/card2.jpg" alt="Puzzle on a blue background"></picture>
+				<div class="cards__item-wrapper">
+					<h6 class="cards__title cards__title-man">Management</h6>
+					<p class="cards__descr">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
+						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+					<div class="cards__link">
+						<a href="#!" class="cards__link">
+							<p>Check courses</p>
+							<picture><source srcset="img/teach/arrow-right.webp" type="image/webp"><img src="img/teach/arrow-right.png" alt="Left arrow"></picture>
+						</a>
+					</div>
+				</div>
+			</li>
+			<li class="cards__item">
+				<picture><source srcset="img/teach/card3.webp" type="image/webp"><img src="img/teach/card3.jpg" alt="Cubes with a human icon"></picture>
+				<div class="cards__item-wrapper">
+					<h6 class="cards__title cards__title-hr">HR & Recruting</h6>
+					<p class="cards__descr">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
+						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+					<div class="cards__link">
+						<a href="#!" class="cards__link">
+							<p>Check courses</p>
+							<picture><source srcset="img/teach/arrow-right.webp" type="image/webp"><img src="img/teach/arrow-right.png" alt="Left arrow"></picture>
+						</a>
+					</div>
+				</div>
+			</li>
+			<li class="cards__item">
+				<img src="img/teach/card4.jpg" alt="Mockups of design with laptop and magazine
+">
+				<div class="cards__item-wrapper">
+					<h6 class="cards__title cards__title-des">Design</h6>
+					<p class="cards__descr">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
+						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+					<div class="cards__link">
+						<a href="#!" class="cards__link">
+							<p>Check courses</p>
+							<picture><source srcset="img/teach/arrow-right.webp" type="image/webp"><img src="img/teach/arrow-right.png" alt="Left arrow"></picture>
+						</a>
+					</div>
+				</div>
+			</li>
+			<li class="cards__item">
+				<picture><source srcset="img/teach/card5.webp" type="image/webp"><img src="img/teach/card5.jpg" alt="A snippet of javascript code"></picture>
+				<div class="cards__item-wrapper">
+					<h6 class="cards__title cards__title-dev">Development</h6>
+					<p class="cards__descr">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
+						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+					<div class="cards__link">
+						<a href="#!" class="cards__link">
+							<p>Check courses</p>
+							<picture><source srcset="img/teach/arrow-right.webp" type="image/webp"><img src="img/teach/arrow-right.png" alt="Left arrow"></picture>
+						</a>
+					</div>
+				</div>
+			</li>
+			<li class="cards__item cards__item-coming">
+				<p class="cards__coming">New studying program coming soon...</p>
+			</li>
+		</ul>
+		<ul class="teach__cards cards">
+			<li class="cards__item">
+				<picture><source srcset="img/teach/card1.webp" type="image/webp"><img src="img/teach/card1.jpg" alt="Paper clips on a pink background"></picture>
+				<div class="cards__item-wrapper">
+					<h6 class="cards__title cards__title-mar">Marketing</h6>
+					<p class="cards__descr">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
+						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+					<div class="cards__link">
+						<a href="#!" class="cards__link">
+							<p>Check courses</p>
+							<picture><source srcset="img/teach/arrow-right.webp" type="image/webp"><img src="img/teach/arrow-right.png" alt="Left arrow"></picture>
+						</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="teach__cards cards ">
+			<li class="cards__item">
+				<picture><source srcset="img/teach/card2.webp" type="image/webp"><img src="img/teach/card2.jpg" alt="Puzzle on a blue background"></picture>
+				<div class="cards__item-wrapper">
+					<h6 class="cards__title cards__title-man">Management</h6>
+					<p class="cards__descr">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
+						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+					<div class="cards__link">
+						<a href="#!" class="cards__link">
+							<p>Check courses</p>
+							<picture><source srcset="img/teach/arrow-right.webp" type="image/webp"><img src="img/teach/arrow-right.png" alt="Left arrow"></picture>
+						</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="teach__cards cards">
+			<li class="cards__item">
+				<picture><source srcset="img/teach/card3.webp" type="image/webp"><img src="img/teach/card3.jpg" alt="Cubes with a human icon"></picture>
+				<div class="cards__item-wrapper">
+					<h6 class="cards__title cards__title-hr">HR & Recruting</h6>
+					<p class="cards__descr">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
+						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+					<div class="cards__link">
+						<a href="#!" class="cards__link">
+							<p>Check courses</p>
+							<picture><source srcset="img/teach/arrow-right.webp" type="image/webp"><img src="img/teach/arrow-right.png" alt="Left arrow"></picture>
+						</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="teach__cards cards">
+			<li class="cards__item">
+				<img src="img/teach/card4.jpg" alt="Mockups of design with laptop and magazine
+">
+				<div class="cards__item-wrapper">
+					<h6 class="cards__title cards__title-des">Design</h6>
+					<p class="cards__descr">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
+						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+					<div class="cards__link">
+						<a href="#!" class="cards__link">
+							<p>Check courses</p>
+							<picture><source srcset="img/teach/arrow-right.webp" type="image/webp"><img src="img/teach/arrow-right.png" alt="Left arrow"></picture>
+						</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="teach__cards cards">
+			<li class="cards__item">
+				<picture><source srcset="img/teach/card5.webp" type="image/webp"><img src="img/teach/card5.jpg" alt="A snippet of javascript code"></picture>
+				<div class="cards__item-wrapper">
+					<h6 class="cards__title cards__title-dev">Development</h6>
+					<p class="cards__descr">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum
+						eu&nbsp;viverra faucibus. Viverra scelerisque consequat.</p>
+					<div class="cards__link">
+						<a href="#!" class="cards__link">
+							<p>Check courses</p>
+							<picture><source srcset="img/teach/arrow-right.webp" type="image/webp"><img src="img/teach/arrow-right.png" alt="Left arrow"></picture>
+						</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+				<section class="certificate" id="certificate">
+	<div class="certificate__container container">
+		<div class="certificate__content">
+			<p class="certificate__subtitle subtitle">Createx Certificate</p>
+			<h2 class="certificate__title title">Your expertise will be confirmed</h2>
+			<p class="certificate__partners text">We&nbsp;are accredited by&nbsp;international professional organizations and institutes:</p>
+			<ul class="certificate__list organizations">
+				<li class="organizations__item"><picture><source srcset="img/certificate/org1.webp" type="image/webp"><img src="img/certificate/org1.png" alt="Del Mar Strategy"></picture></li>
+				<li class="organizations__item"><picture><source srcset="img/certificate/org2.webp" type="image/webp"><img src="img/certificate/org2.png" alt="Sentinal Consulting"></picture></li>
+				<li class="organizations__item"><picture><source srcset="img/certificate/org3.webp" type="image/webp"><img src="img/certificate/org3.png" alt="National"></picture></li>
+			</ul>
+			<picture><source srcset="img/certificate/certificate.webp" type="image/webp"><img src="img/certificate/certificate.jpg" alt="Our company's certificate" class="certificate__img"></picture>
+		</div>
+	</div>
+</section>
+			</div>
+			<div class="bg">
+				<section class="team">
+	<div class="container">
+		<p class="team__subtitle subtitle">Best tutors are all here</p>
+		<h2 class="team__title title">Meet our team</h2>
+		<div class="team__slider swiper">
+			<div class="swiper-wrapper">
+				<div class="slider-team swiper-slide">
+					<div class="team__card ">
+						<div class="team-slide">
+							<div class="team__photo">
+								<picture><source srcset="img/team/Dianne.webp" type="image/webp"><img src="img/team/Dianne.png" class="team__photo-yellow" alt="Dianne Russell's photo"></picture>
+								<ul class="team__social">
+									<li class="team__facebook">
+										<a href="https://facebook.com/" class="team__link" target="_blank">
+											<svg width="20" height="20" viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+												<path
+													d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z"
+													/>
+											</svg>
+										</a>
+									</li>
+									<li class="team__inst">
+										<a href="https://instagram.com/" class="team__link" target="_blank">
+											<svg width="20" height="20" viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+												<path
+													d="M18.3169 6.56606C18.2778 5.6805 18.1346 5.07168 17.9295 4.54413C17.7178 3.98415 17.3923 3.4828 16.9657 3.06603C16.5489 2.64277 16.0443 2.31388 15.4908 2.10555C14.9602 1.90041 14.3545 1.7572 13.469 1.71816C12.5768 1.67581 12.2936 1.66602 10.0308 1.66602C7.76794 1.66602 7.48471 1.67581 6.59584 1.71485C5.71028 1.7539 5.10146 1.89723 4.57404 2.10225C4.01393 2.31388 3.51258 2.63946 3.09581 3.06603C2.67255 3.4828 2.34379 3.98746 2.13534 4.54095C1.9302 5.07168 1.78699 5.67719 1.74795 6.56275C1.70559 7.45493 1.6958 7.73816 1.6958 10.001C1.6958 12.2638 1.70559 12.547 1.74464 13.4359C1.78368 14.3215 1.92702 14.9303 2.13216 15.4578C2.34379 16.0178 2.67255 16.5191 3.09581 16.9359C3.51258 17.3592 4.01724 17.6881 4.57073 17.8964C5.10146 18.1015 5.70697 18.2447 6.59266 18.2838C7.4814 18.323 7.76476 18.3326 10.0276 18.3326C12.2904 18.3326 12.5736 18.323 13.4625 18.2838C14.348 18.2447 14.9569 18.1015 15.4843 17.8964C16.6044 17.4633 17.4899 16.5778 17.923 15.4578C18.128 14.9271 18.2713 14.3215 18.3104 13.4359C18.3494 12.547 18.3592 12.2638 18.3592 10.001C18.3592 7.73816 18.3559 7.45493 18.3169 6.56606ZM16.816 13.3708C16.7801 14.1847 16.6434 14.6243 16.5295 14.9173C16.2494 15.6434 15.6731 16.2196 14.9471 16.4997C14.654 16.6136 14.2113 16.7504 13.4005 16.7861C12.5215 16.8253 12.2578 16.8349 10.0341 16.8349C7.81029 16.8349 7.54334 16.8253 6.66744 16.7861C5.85348 16.7504 5.41394 16.6136 5.12092 16.4997C4.7596 16.3661 4.43071 16.1545 4.16375 15.8778C3.88701 15.6075 3.67538 15.2819 3.54184 14.9206C3.42788 14.6276 3.29116 14.1847 3.25542 13.3741C3.21625 12.495 3.20659 12.2312 3.20659 10.0075C3.20659 7.7837 3.21625 7.51674 3.25542 6.64097C3.29116 5.82701 3.42788 5.38747 3.54184 5.09444C3.67538 4.733 3.88701 4.40423 4.16706 4.13715C4.43719 3.8604 4.76278 3.64877 5.12423 3.51536C5.41725 3.40141 5.8601 3.26469 6.67075 3.22882C7.54983 3.18978 7.8136 3.17998 10.0372 3.17998C12.2643 3.17998 12.528 3.18978 13.4039 3.22882C14.2178 3.26469 14.6573 3.40141 14.9504 3.51536C15.3117 3.64877 15.6406 3.8604 15.9075 4.13715C16.1843 4.40741 16.3959 4.733 16.5295 5.09444C16.6434 5.38747 16.7801 5.83019 16.816 6.64097C16.855 7.52005 16.8648 7.7837 16.8648 10.0075C16.8648 12.2312 16.855 12.4917 16.816 13.3708Z"
+													 />
+												<path
+													d="M10.0307 5.71954C7.66708 5.71954 5.74931 7.63719 5.74931 10.001C5.74931 12.3648 7.66708 14.2824 10.0307 14.2824C12.3945 14.2824 14.3122 12.3648 14.3122 10.001C14.3122 7.63719 12.3945 5.71954 10.0307 5.71954ZM10.0307 12.7782C8.49732 12.7782 7.25349 11.5345 7.25349 10.001C7.25349 8.46743 8.49732 7.22372 10.0307 7.22372C11.5643 7.22372 12.808 8.46743 12.808 10.001C12.808 11.5345 11.5643 12.7782 10.0307 12.7782Z"
+													/>
+												<path
+													d="M15.4811 5.55027C15.4811 6.10223 15.0336 6.54979 14.4815 6.54979C13.9295 6.54979 13.482 6.10223 13.482 5.55027C13.482 4.99817 13.9295 4.55074 14.4815 4.55074C15.0336 4.55074 15.4811 4.99817 15.4811 5.55027Z"
+													/>
+											</svg>
+										</a>
+									</li>
+									<li class="team__linked">
+										<a href="https://xn----gtbbdoclgtecmzop.xn--p1ai/" class="team__link" target="_blank">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+												<path d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z"/>
+												<path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z"/>
+												<path d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z"/>
+												</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="team-slide__text">
+								<h6 class="team__name descr-bold">Dianne Russell</h6>
+								<p class="team__proff text">Founder and CEO</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" slider-team swiper-slide">
+					<div class="team__card ">
+						<div class=" team-slide">
+							<div class="team__photo">
+								<picture><source srcset="img/team/Jerome.webp" type="image/webp"><img src="img/team/Jerome.png" class="team__photo-yellow" alt="Jerome Bell's photo"></picture>
+								<ul class="team__social">
+									<li class="team__facebook">
+										<a href="https://facebook.com/" class="team__link" target="_blank">
+											<svg width="20" height="20" viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+												<path
+													d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z"
+													/>
+											</svg>
+										</a>
+									</li>
+									<li class="team__inst">
+										<a href="https://instagram.com/" class="team__link" target="_blank">
+											<svg width="20" height="20" viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+												<path
+													d="M18.3169 6.56606C18.2778 5.6805 18.1346 5.07168 17.9295 4.54413C17.7178 3.98415 17.3923 3.4828 16.9657 3.06603C16.5489 2.64277 16.0443 2.31388 15.4908 2.10555C14.9602 1.90041 14.3545 1.7572 13.469 1.71816C12.5768 1.67581 12.2936 1.66602 10.0308 1.66602C7.76794 1.66602 7.48471 1.67581 6.59584 1.71485C5.71028 1.7539 5.10146 1.89723 4.57404 2.10225C4.01393 2.31388 3.51258 2.63946 3.09581 3.06603C2.67255 3.4828 2.34379 3.98746 2.13534 4.54095C1.9302 5.07168 1.78699 5.67719 1.74795 6.56275C1.70559 7.45493 1.6958 7.73816 1.6958 10.001C1.6958 12.2638 1.70559 12.547 1.74464 13.4359C1.78368 14.3215 1.92702 14.9303 2.13216 15.4578C2.34379 16.0178 2.67255 16.5191 3.09581 16.9359C3.51258 17.3592 4.01724 17.6881 4.57073 17.8964C5.10146 18.1015 5.70697 18.2447 6.59266 18.2838C7.4814 18.323 7.76476 18.3326 10.0276 18.3326C12.2904 18.3326 12.5736 18.323 13.4625 18.2838C14.348 18.2447 14.9569 18.1015 15.4843 17.8964C16.6044 17.4633 17.4899 16.5778 17.923 15.4578C18.128 14.9271 18.2713 14.3215 18.3104 13.4359C18.3494 12.547 18.3592 12.2638 18.3592 10.001C18.3592 7.73816 18.3559 7.45493 18.3169 6.56606ZM16.816 13.3708C16.7801 14.1847 16.6434 14.6243 16.5295 14.9173C16.2494 15.6434 15.6731 16.2196 14.9471 16.4997C14.654 16.6136 14.2113 16.7504 13.4005 16.7861C12.5215 16.8253 12.2578 16.8349 10.0341 16.8349C7.81029 16.8349 7.54334 16.8253 6.66744 16.7861C5.85348 16.7504 5.41394 16.6136 5.12092 16.4997C4.7596 16.3661 4.43071 16.1545 4.16375 15.8778C3.88701 15.6075 3.67538 15.2819 3.54184 14.9206C3.42788 14.6276 3.29116 14.1847 3.25542 13.3741C3.21625 12.495 3.20659 12.2312 3.20659 10.0075C3.20659 7.7837 3.21625 7.51674 3.25542 6.64097C3.29116 5.82701 3.42788 5.38747 3.54184 5.09444C3.67538 4.733 3.88701 4.40423 4.16706 4.13715C4.43719 3.8604 4.76278 3.64877 5.12423 3.51536C5.41725 3.40141 5.8601 3.26469 6.67075 3.22882C7.54983 3.18978 7.8136 3.17998 10.0372 3.17998C12.2643 3.17998 12.528 3.18978 13.4039 3.22882C14.2178 3.26469 14.6573 3.40141 14.9504 3.51536C15.3117 3.64877 15.6406 3.8604 15.9075 4.13715C16.1843 4.40741 16.3959 4.733 16.5295 5.09444C16.6434 5.38747 16.7801 5.83019 16.816 6.64097C16.855 7.52005 16.8648 7.7837 16.8648 10.0075C16.8648 12.2312 16.855 12.4917 16.816 13.3708Z"
+													 />
+												<path
+													d="M10.0307 5.71954C7.66708 5.71954 5.74931 7.63719 5.74931 10.001C5.74931 12.3648 7.66708 14.2824 10.0307 14.2824C12.3945 14.2824 14.3122 12.3648 14.3122 10.001C14.3122 7.63719 12.3945 5.71954 10.0307 5.71954ZM10.0307 12.7782C8.49732 12.7782 7.25349 11.5345 7.25349 10.001C7.25349 8.46743 8.49732 7.22372 10.0307 7.22372C11.5643 7.22372 12.808 8.46743 12.808 10.001C12.808 11.5345 11.5643 12.7782 10.0307 12.7782Z"
+													/>
+												<path
+													d="M15.4811 5.55027C15.4811 6.10223 15.0336 6.54979 14.4815 6.54979C13.9295 6.54979 13.482 6.10223 13.482 5.55027C13.482 4.99817 13.9295 4.55074 14.4815 4.55074C15.0336 4.55074 15.4811 4.99817 15.4811 5.55027Z"
+													/>
+											</svg>
+										</a>
+									</li>
+									<li class="team__linked">
+										<a href="https://xn----gtbbdoclgtecmzop.xn--p1ai/" class="team__link" target="_blank">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+												<path d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z"/>
+												<path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z"/>
+												<path d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z"/>
+												</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="team-slide__text">
+								<h6 class="team__name descr-bold">Dianne Russell</h6>
+								<p class="team__proff text">Founder and CEO</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" slider-team swiper-slide">
+					<div class="team__card ">
+						<div class=" team-slide">
+							<div class="team__photo">
+								<picture><source srcset="img/team/Kristin.webp" type="image/webp"><img src="img/team/Kristin.png" class="team__photo-yellow" alt="Kristin Watson's photo"></picture>
+								<ul class="team__social">
+									<li class="team__facebook">
+										<a href="https://facebook.com/" class="team__link" target="_blank">
+											<svg width="20" height="20" viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+												<path
+													d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z"
+													/>
+											</svg>
+										</a>
+									</li>
+									<li class="team__inst">
+										<a href="https://instagram.com/" class="team__link" target="_blank">
+											<svg width="20" height="20" viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+												<path
+													d="M18.3169 6.56606C18.2778 5.6805 18.1346 5.07168 17.9295 4.54413C17.7178 3.98415 17.3923 3.4828 16.9657 3.06603C16.5489 2.64277 16.0443 2.31388 15.4908 2.10555C14.9602 1.90041 14.3545 1.7572 13.469 1.71816C12.5768 1.67581 12.2936 1.66602 10.0308 1.66602C7.76794 1.66602 7.48471 1.67581 6.59584 1.71485C5.71028 1.7539 5.10146 1.89723 4.57404 2.10225C4.01393 2.31388 3.51258 2.63946 3.09581 3.06603C2.67255 3.4828 2.34379 3.98746 2.13534 4.54095C1.9302 5.07168 1.78699 5.67719 1.74795 6.56275C1.70559 7.45493 1.6958 7.73816 1.6958 10.001C1.6958 12.2638 1.70559 12.547 1.74464 13.4359C1.78368 14.3215 1.92702 14.9303 2.13216 15.4578C2.34379 16.0178 2.67255 16.5191 3.09581 16.9359C3.51258 17.3592 4.01724 17.6881 4.57073 17.8964C5.10146 18.1015 5.70697 18.2447 6.59266 18.2838C7.4814 18.323 7.76476 18.3326 10.0276 18.3326C12.2904 18.3326 12.5736 18.323 13.4625 18.2838C14.348 18.2447 14.9569 18.1015 15.4843 17.8964C16.6044 17.4633 17.4899 16.5778 17.923 15.4578C18.128 14.9271 18.2713 14.3215 18.3104 13.4359C18.3494 12.547 18.3592 12.2638 18.3592 10.001C18.3592 7.73816 18.3559 7.45493 18.3169 6.56606ZM16.816 13.3708C16.7801 14.1847 16.6434 14.6243 16.5295 14.9173C16.2494 15.6434 15.6731 16.2196 14.9471 16.4997C14.654 16.6136 14.2113 16.7504 13.4005 16.7861C12.5215 16.8253 12.2578 16.8349 10.0341 16.8349C7.81029 16.8349 7.54334 16.8253 6.66744 16.7861C5.85348 16.7504 5.41394 16.6136 5.12092 16.4997C4.7596 16.3661 4.43071 16.1545 4.16375 15.8778C3.88701 15.6075 3.67538 15.2819 3.54184 14.9206C3.42788 14.6276 3.29116 14.1847 3.25542 13.3741C3.21625 12.495 3.20659 12.2312 3.20659 10.0075C3.20659 7.7837 3.21625 7.51674 3.25542 6.64097C3.29116 5.82701 3.42788 5.38747 3.54184 5.09444C3.67538 4.733 3.88701 4.40423 4.16706 4.13715C4.43719 3.8604 4.76278 3.64877 5.12423 3.51536C5.41725 3.40141 5.8601 3.26469 6.67075 3.22882C7.54983 3.18978 7.8136 3.17998 10.0372 3.17998C12.2643 3.17998 12.528 3.18978 13.4039 3.22882C14.2178 3.26469 14.6573 3.40141 14.9504 3.51536C15.3117 3.64877 15.6406 3.8604 15.9075 4.13715C16.1843 4.40741 16.3959 4.733 16.5295 5.09444C16.6434 5.38747 16.7801 5.83019 16.816 6.64097C16.855 7.52005 16.8648 7.7837 16.8648 10.0075C16.8648 12.2312 16.855 12.4917 16.816 13.3708Z"
+													 />
+												<path
+													d="M10.0307 5.71954C7.66708 5.71954 5.74931 7.63719 5.74931 10.001C5.74931 12.3648 7.66708 14.2824 10.0307 14.2824C12.3945 14.2824 14.3122 12.3648 14.3122 10.001C14.3122 7.63719 12.3945 5.71954 10.0307 5.71954ZM10.0307 12.7782C8.49732 12.7782 7.25349 11.5345 7.25349 10.001C7.25349 8.46743 8.49732 7.22372 10.0307 7.22372C11.5643 7.22372 12.808 8.46743 12.808 10.001C12.808 11.5345 11.5643 12.7782 10.0307 12.7782Z"
+													/>
+												<path
+													d="M15.4811 5.55027C15.4811 6.10223 15.0336 6.54979 14.4815 6.54979C13.9295 6.54979 13.482 6.10223 13.482 5.55027C13.482 4.99817 13.9295 4.55074 14.4815 4.55074C15.0336 4.55074 15.4811 4.99817 15.4811 5.55027Z"
+													/>
+											</svg>
+										</a>
+									</li>
+									<li class="team__linked">
+										<a href="https://xn----gtbbdoclgtecmzop.xn--p1ai/" class="team__link" target="_blank">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+												<path d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z"/>
+												<path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z"/>
+												<path d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z"/>
+												</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="team-slide__text">
+								<h6 class="team__name descr-bold">Dianne Russell</h6>
+								<p class="team__proff text">Founder and CEO</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" slider-team swiper-slide">
+					<div class="team__card ">
+						<div class=" team-slide">
+							<div class="team__photo">
+								<picture><source srcset="img/team/Marvin.webp" type="image/webp"><img src="img/team/Marvin.png" class="team__photo-yellow" alt="Marvin McKinney's photo"></picture>
+								<ul class="team__social">
+									<li class="team__facebook">
+										<a href="https://facebook.com/" class="team__link" target="_blank">
+											<svg width="20" height="20" viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+												<path
+													d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z"
+													/>
+											</svg>
+										</a>
+									</li>
+									<li class="team__inst">
+										<a href="https://instagram.com/" class="team__link" target="_blank">
+											<svg width="20" height="20" viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+												<path
+													d="M18.3169 6.56606C18.2778 5.6805 18.1346 5.07168 17.9295 4.54413C17.7178 3.98415 17.3923 3.4828 16.9657 3.06603C16.5489 2.64277 16.0443 2.31388 15.4908 2.10555C14.9602 1.90041 14.3545 1.7572 13.469 1.71816C12.5768 1.67581 12.2936 1.66602 10.0308 1.66602C7.76794 1.66602 7.48471 1.67581 6.59584 1.71485C5.71028 1.7539 5.10146 1.89723 4.57404 2.10225C4.01393 2.31388 3.51258 2.63946 3.09581 3.06603C2.67255 3.4828 2.34379 3.98746 2.13534 4.54095C1.9302 5.07168 1.78699 5.67719 1.74795 6.56275C1.70559 7.45493 1.6958 7.73816 1.6958 10.001C1.6958 12.2638 1.70559 12.547 1.74464 13.4359C1.78368 14.3215 1.92702 14.9303 2.13216 15.4578C2.34379 16.0178 2.67255 16.5191 3.09581 16.9359C3.51258 17.3592 4.01724 17.6881 4.57073 17.8964C5.10146 18.1015 5.70697 18.2447 6.59266 18.2838C7.4814 18.323 7.76476 18.3326 10.0276 18.3326C12.2904 18.3326 12.5736 18.323 13.4625 18.2838C14.348 18.2447 14.9569 18.1015 15.4843 17.8964C16.6044 17.4633 17.4899 16.5778 17.923 15.4578C18.128 14.9271 18.2713 14.3215 18.3104 13.4359C18.3494 12.547 18.3592 12.2638 18.3592 10.001C18.3592 7.73816 18.3559 7.45493 18.3169 6.56606ZM16.816 13.3708C16.7801 14.1847 16.6434 14.6243 16.5295 14.9173C16.2494 15.6434 15.6731 16.2196 14.9471 16.4997C14.654 16.6136 14.2113 16.7504 13.4005 16.7861C12.5215 16.8253 12.2578 16.8349 10.0341 16.8349C7.81029 16.8349 7.54334 16.8253 6.66744 16.7861C5.85348 16.7504 5.41394 16.6136 5.12092 16.4997C4.7596 16.3661 4.43071 16.1545 4.16375 15.8778C3.88701 15.6075 3.67538 15.2819 3.54184 14.9206C3.42788 14.6276 3.29116 14.1847 3.25542 13.3741C3.21625 12.495 3.20659 12.2312 3.20659 10.0075C3.20659 7.7837 3.21625 7.51674 3.25542 6.64097C3.29116 5.82701 3.42788 5.38747 3.54184 5.09444C3.67538 4.733 3.88701 4.40423 4.16706 4.13715C4.43719 3.8604 4.76278 3.64877 5.12423 3.51536C5.41725 3.40141 5.8601 3.26469 6.67075 3.22882C7.54983 3.18978 7.8136 3.17998 10.0372 3.17998C12.2643 3.17998 12.528 3.18978 13.4039 3.22882C14.2178 3.26469 14.6573 3.40141 14.9504 3.51536C15.3117 3.64877 15.6406 3.8604 15.9075 4.13715C16.1843 4.40741 16.3959 4.733 16.5295 5.09444C16.6434 5.38747 16.7801 5.83019 16.816 6.64097C16.855 7.52005 16.8648 7.7837 16.8648 10.0075C16.8648 12.2312 16.855 12.4917 16.816 13.3708Z"
+													 />
+												<path
+													d="M10.0307 5.71954C7.66708 5.71954 5.74931 7.63719 5.74931 10.001C5.74931 12.3648 7.66708 14.2824 10.0307 14.2824C12.3945 14.2824 14.3122 12.3648 14.3122 10.001C14.3122 7.63719 12.3945 5.71954 10.0307 5.71954ZM10.0307 12.7782C8.49732 12.7782 7.25349 11.5345 7.25349 10.001C7.25349 8.46743 8.49732 7.22372 10.0307 7.22372C11.5643 7.22372 12.808 8.46743 12.808 10.001C12.808 11.5345 11.5643 12.7782 10.0307 12.7782Z"
+													/>
+												<path
+													d="M15.4811 5.55027C15.4811 6.10223 15.0336 6.54979 14.4815 6.54979C13.9295 6.54979 13.482 6.10223 13.482 5.55027C13.482 4.99817 13.9295 4.55074 14.4815 4.55074C15.0336 4.55074 15.4811 4.99817 15.4811 5.55027Z"
+													/>
+											</svg>
+										</a>
+									</li>
+									<li class="team__linked">
+										<a href="https://xn----gtbbdoclgtecmzop.xn--p1ai/" class="team__link" target="_blank">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+												<path d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z"/>
+												<path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z"/>
+												<path d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z"/>
+												</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="team-slide__text">
+								<h6 class="team__name descr-bold">Dianne Russell</h6>
+								<p class="team__proff text">Founder and CEO</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" slider-team swiper-slide">
+					<div class="team__card">
+						<div class=" team-slide">
+							<div class="team__photo">
+								<picture><source srcset="img/team/Dianne.webp" type="image/webp"><img src="img/team/Dianne.png" class="team__photo-yellow" alt="Dianne Russell's photo"></picture>
+								<ul class="team__social">
+									<li class="team__facebook">
+										<a href="https://facebook.com/" class="team__link" target="_blank">
+											<svg width="20" height="20" viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+												<path
+													d="M14.6359 0.837799L12.3215 0.833984C9.72134 0.833984 8.04102 2.60489 8.04102 5.34584V7.42611H5.71401C5.51293 7.42611 5.3501 7.59357 5.3501 7.80013V10.8142C5.3501 11.0208 5.51312 11.188 5.71401 11.188H8.04102V18.7935C8.04102 19 8.20386 19.1673 8.40494 19.1673H11.441C11.6421 19.1673 11.8049 18.9999 11.8049 18.7935V11.188H14.5258C14.7268 11.188 14.8897 11.0208 14.8897 10.8142L14.8908 7.80013C14.8908 7.70095 14.8524 7.60597 14.7842 7.53578C14.7161 7.46559 14.6232 7.42611 14.5267 7.42611H11.8049V5.66264C11.8049 4.81505 12.0016 4.38476 13.0764 4.38476L14.6355 4.38419C14.8364 4.38419 14.9992 4.21673 14.9992 4.01037V1.21163C14.9992 1.00545 14.8366 0.83818 14.6359 0.837799Z"
+													/>
+											</svg>
+										</a>
+									</li>
+									<li class="team__inst">
+										<a href="https://instagram.com/" class="team__link" target="_blank">
+											<svg width="20" height="20" viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+												<path
+													d="M18.3169 6.56606C18.2778 5.6805 18.1346 5.07168 17.9295 4.54413C17.7178 3.98415 17.3923 3.4828 16.9657 3.06603C16.5489 2.64277 16.0443 2.31388 15.4908 2.10555C14.9602 1.90041 14.3545 1.7572 13.469 1.71816C12.5768 1.67581 12.2936 1.66602 10.0308 1.66602C7.76794 1.66602 7.48471 1.67581 6.59584 1.71485C5.71028 1.7539 5.10146 1.89723 4.57404 2.10225C4.01393 2.31388 3.51258 2.63946 3.09581 3.06603C2.67255 3.4828 2.34379 3.98746 2.13534 4.54095C1.9302 5.07168 1.78699 5.67719 1.74795 6.56275C1.70559 7.45493 1.6958 7.73816 1.6958 10.001C1.6958 12.2638 1.70559 12.547 1.74464 13.4359C1.78368 14.3215 1.92702 14.9303 2.13216 15.4578C2.34379 16.0178 2.67255 16.5191 3.09581 16.9359C3.51258 17.3592 4.01724 17.6881 4.57073 17.8964C5.10146 18.1015 5.70697 18.2447 6.59266 18.2838C7.4814 18.323 7.76476 18.3326 10.0276 18.3326C12.2904 18.3326 12.5736 18.323 13.4625 18.2838C14.348 18.2447 14.9569 18.1015 15.4843 17.8964C16.6044 17.4633 17.4899 16.5778 17.923 15.4578C18.128 14.9271 18.2713 14.3215 18.3104 13.4359C18.3494 12.547 18.3592 12.2638 18.3592 10.001C18.3592 7.73816 18.3559 7.45493 18.3169 6.56606ZM16.816 13.3708C16.7801 14.1847 16.6434 14.6243 16.5295 14.9173C16.2494 15.6434 15.6731 16.2196 14.9471 16.4997C14.654 16.6136 14.2113 16.7504 13.4005 16.7861C12.5215 16.8253 12.2578 16.8349 10.0341 16.8349C7.81029 16.8349 7.54334 16.8253 6.66744 16.7861C5.85348 16.7504 5.41394 16.6136 5.12092 16.4997C4.7596 16.3661 4.43071 16.1545 4.16375 15.8778C3.88701 15.6075 3.67538 15.2819 3.54184 14.9206C3.42788 14.6276 3.29116 14.1847 3.25542 13.3741C3.21625 12.495 3.20659 12.2312 3.20659 10.0075C3.20659 7.7837 3.21625 7.51674 3.25542 6.64097C3.29116 5.82701 3.42788 5.38747 3.54184 5.09444C3.67538 4.733 3.88701 4.40423 4.16706 4.13715C4.43719 3.8604 4.76278 3.64877 5.12423 3.51536C5.41725 3.40141 5.8601 3.26469 6.67075 3.22882C7.54983 3.18978 7.8136 3.17998 10.0372 3.17998C12.2643 3.17998 12.528 3.18978 13.4039 3.22882C14.2178 3.26469 14.6573 3.40141 14.9504 3.51536C15.3117 3.64877 15.6406 3.8604 15.9075 4.13715C16.1843 4.40741 16.3959 4.733 16.5295 5.09444C16.6434 5.38747 16.7801 5.83019 16.816 6.64097C16.855 7.52005 16.8648 7.7837 16.8648 10.0075C16.8648 12.2312 16.855 12.4917 16.816 13.3708Z"
+													 />
+												<path
+													d="M10.0307 5.71954C7.66708 5.71954 5.74931 7.63719 5.74931 10.001C5.74931 12.3648 7.66708 14.2824 10.0307 14.2824C12.3945 14.2824 14.3122 12.3648 14.3122 10.001C14.3122 7.63719 12.3945 5.71954 10.0307 5.71954ZM10.0307 12.7782C8.49732 12.7782 7.25349 11.5345 7.25349 10.001C7.25349 8.46743 8.49732 7.22372 10.0307 7.22372C11.5643 7.22372 12.808 8.46743 12.808 10.001C12.808 11.5345 11.5643 12.7782 10.0307 12.7782Z"
+													/>
+												<path
+													d="M15.4811 5.55027C15.4811 6.10223 15.0336 6.54979 14.4815 6.54979C13.9295 6.54979 13.482 6.10223 13.482 5.55027C13.482 4.99817 13.9295 4.55074 14.4815 4.55074C15.0336 4.55074 15.4811 4.99817 15.4811 5.55027Z"
+													/>
+											</svg>
+										</a>
+									</li>
+									<li class="team__linked">
+										<a href="https://xn----gtbbdoclgtecmzop.xn--p1ai/" class="team__link" target="_blank">
+											<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#74757C">
+												<path d="M18.329 18.3327L18.3332 18.332V12.2195C18.3332 9.22921 17.6894 6.92574 14.1936 6.92574C12.513 6.92574 11.3853 7.84796 10.9248 8.72227H10.8762V7.2049H7.56163V18.332H11.013V12.8223C11.013 11.3716 11.288 9.9688 13.0846 9.9688C14.8547 9.9688 14.8811 11.6244 14.8811 12.9153V18.3327H18.329Z"/>
+												<path d="M1.9415 7.2056H5.39706V18.3327H1.9415V7.2056Z"/>
+												<path d="M3.66789 1.66602C2.56303 1.66602 1.6665 2.56254 1.6665 3.6674C1.6665 4.77227 2.56303 5.68754 3.66789 5.68754C4.77275 5.68754 5.66928 4.77227 5.66928 3.6674C5.66859 2.56254 4.77206 1.66602 3.66789 1.66602Z"/>
+												</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="team-slide__text">
+								<h6 class="team__name descr-bold">Dianne Russell</h6>
+								<p class="team__proff text">Founder and CEO</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-buttons">
+				<div class="team-swiper-btn team-swiper-prev swiper-button-prev">
+					<svg width="18" height="12" viewBox="0 0 18 12" fill="#424551" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.20711 11.2071C5.81658 11.5976 5.18342 11.5976 4.79289 11.2071L0.292892 6.70711C-0.0976315 6.31658 -0.0976315 5.68342 0.292892 5.29289L4.79289 0.792893C5.18342 0.402369 5.81658 0.402369 6.20711 0.792893C6.59763 1.18342 6.59763 1.81658 6.20711 2.20711L3.41421 5L17 5C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7L3.41421 7L6.20711 9.79289C6.59763 10.1834 6.59763 10.8166 6.20711 11.2071Z"/>
+						</svg>
+				</div>
+				<div class="team-swiper-btn team-swiper-next swiper-button-next">
+					<svg width="18" height="12" viewBox="0 0 18 12" fill="#424551" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z"/>
+						</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+				<section class="testimonials">
+	<div class="testimonials__container container">
+		<div class="testimonials__header center-header">
+			<p class="testimonials__subtitle subtitle">Testimonials</p>
+			<h2 class="testimonials__title title">What our students say</h2>
+		</div>
+		<div class="testimonials__slider slider-testimonials swiper">
+			<div class="swiper-wrapper">
+				<div class="testimonials__slide swiper-slide">
+					<div class="testimonials__card-wrapper">
+						<div class="testimonials__comment">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu&nbsp;sed purus facilisi. Vitae id&nbsp;turpis tempus ornare turpis quis non. Congue tortor in&nbsp;euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer&nbsp;in.
+						</div>
+						<div class="testimonials__author">
+							<picture><source srcset="img/testimonials/Eleanora.webp" type="image/webp"><img src="img/testimonials/Eleanora.jpg" alt="Портрет комментатора" class="testimonials__img"></picture>
+							<div class="testimonials__author-info">
+								<p class="testimonials__name">Eleanor Pena</p>
+								<p class="testimonials__position">Position, Course</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="testimonials__slide swiper-slide">
+					<div class="testimonials__card-wrapper">
+						<div class="testimonials__comment">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu&nbsp;sed purus facilisi. Vitae id&nbsp;turpis tempus ornare turpis quis non. Congue tortor in&nbsp;euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer&nbsp;in.
+						</div>
+						<div class="testimonials__author">
+							<picture><source srcset="img/testimonials/Eleanora.webp" type="image/webp"><img src="img/testimonials/Eleanora.jpg" alt="Портрет комментатора" class="testimonials__img"></picture>
+							<div class="testimonials__author-info">
+								<p class="testimonials__name">Eleanor Pena</p>
+								<p class="testimonials__position">Position, Course</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="testimonials__slide swiper-slide">
+					<div class="testimonials__card-wrapper">
+						<div class="testimonials__comment">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu&nbsp;sed purus facilisi. Vitae id&nbsp;turpis tempus ornare turpis quis non. Congue tortor in&nbsp;euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer&nbsp;in.
+						</div>
+						<div class="testimonials__author">
+							<picture><source srcset="img/testimonials/Eleanora.webp" type="image/webp"><img src="img/testimonials/Eleanora.jpg" alt="Портрет комментатора" class="testimonials__img"></picture>
+							<div class="testimonials__author-info">
+								<p class="testimonials__name">Eleanor Pena</p>
+								<p class="testimonials__position">Position, Course</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="testimonials__slide swiper-slide">
+					<div class="testimonials__card-wrapper">
+						<div class="testimonials__comment">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu&nbsp;sed purus facilisi. Vitae id&nbsp;turpis tempus ornare turpis quis non. Congue tortor in&nbsp;euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer&nbsp;in.
+						</div>
+						<div class="testimonials__author">
+							<picture><source srcset="img/testimonials/Eleanora.webp" type="image/webp"><img src="img/testimonials/Eleanora.jpg" alt="Портрет комментатора" class="testimonials__img"></picture>
+							<div class="testimonials__author-info">
+								<p class="testimonials__name">Eleanor Pena</p>
+								<p class="testimonials__position">Position, Course</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="testimonials__pagination pagination" aria-hidden="true"></ul>
+		</div>
+		<div class="slider-testimonials__button">
+			<div class="slider-testimonials-btn slider-testimonials-prev swiper-button-prev"><svg width="18" height="12" viewBox="0 0 18 12" fill="#424551" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M6.20711 11.2071C5.81658 11.5976 5.18342 11.5976 4.79289 11.2071L0.292892 6.70711C-0.0976315 6.31658 -0.0976315 5.68342 0.292892 5.29289L4.79289 0.792893C5.18342 0.402369 5.81658 0.402369 6.20711 0.792893C6.59763 1.18342 6.59763 1.81658 6.20711 2.20711L3.41421 5L17 5C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7L3.41421 7L6.20711 9.79289C6.59763 10.1834 6.59763 10.8166 6.20711 11.2071Z"/>
+				</svg>
+			</div>
+			<div class="slider-testimonials-btn slider-testimonials-next swiper-btn-before swiper-button-next"><svg width="18" height="12" viewBox="0 0 18 12" fill="#424551" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z"/>
+				</svg>
+			</div>
+		</div>
+	</div>
+</section>
+				<section class="jobs">
+	<div class="container">
+		<div class="jobs__header center-header">
+			<p class="jobs__subtitle subtitle">Testimonials</p>
+			<h2 class="jobs__title title">What our students say</h2>
+		</div>
+		<ul class="jobs__list">
+			<li class="jobs__item">
+				<picture><source srcset="img/jobs/InDepth.webp" type="image/webp"><img src="img/jobs/InDepth.png" alt="InDepth Company"></picture>
+			</li>
+			<li class="jobs__item">
+				<picture><source srcset="img/jobs/higher.webp" type="image/webp"><img src="img/jobs/higher.png" alt="Higher Fit Company"></picture>
+			</li>
+			<li class="jobs__item">
+				<picture><source srcset="img/jobs/org2.webp" type="image/webp"><img src="img/jobs/org2.png" alt="Sentinal Consulting Company"></picture>
+			</li>
+			<li class="jobs__item">
+				<picture><source srcset="img/jobs/happy.webp" type="image/webp"><img src="img/jobs/happy.png" alt="Happy Home Company"></picture>
+			</li>
+			<li class="jobs__item">
+				<picture><source srcset="img/jobs/forsale.webp" type="image/webp"><img src="img/jobs/forsale.png" alt="For Sale Company"></picture>
+			</li>
+			<li class="jobs__item">
+				<picture><source srcset="img/jobs/sunset.webp" type="image/webp"><img src="img/jobs/sunset.png" alt="Sunset Reality Company"></picture>
+			</li>
+			<li class="jobs__item">
+				<picture><source srcset="img/jobs/atlantis.webp" type="image/webp"><img src="img/jobs/atlantis.png" alt="Atlantis Health Company"></picture>
+			</li>
+			<li class="jobs__item">
+				<picture><source srcset="img/jobs/org1.webp" type="image/webp"><img src="img/jobs/org1.png" alt="Del Mar Strategy Company"></picture>
+			</li>
+			<li class="jobs__item">
+				<picture><source srcset="img/jobs/completehealth.webp" type="image/webp"><img src="img/jobs/completehealth.png" alt="Complete Health Company"></picture>
+			</li>
+			<li class="jobs__item">
+				<picture><source srcset="img/jobs/org3.webp" type="image/webp"><img src="img/jobs/org3.png" alt="National Company"></picture>
+			</li>
+			<li class="jobs__item">
+				<picture><source srcset="img/jobs/gym.webp" type="image/webp"><img src="img/jobs/gym.png" alt="Ultimate Gym Company"></picture>
+			</li>
+		</ul>
+</section>
+			</div>
+			<section class="program">
+	<div class="container">
+		<p class="about__subtitle subtitle">Course program</p>
+		<h2 class="about__title title">What will you learn</h2>
+	</div>
+</section>
 		</main>
 		<footer></footer>
 	</div>
@@ -159,8 +755,9 @@
 	<img src="img/icons/up.svg" alt="up">
 </a>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js?_v=20230101175632"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20230101175632"></script>
-<script src="js/script.js?_v=20230101175632"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js?_v=20230103163355"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20230103163355"></script>
+<script src="js/swiper.js?_v=20230103163355"></script>
+<script src="js/script.js?_v=20230103163355"></script>
 
 </html>
