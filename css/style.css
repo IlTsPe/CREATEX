@@ -2030,7 +2030,7 @@ address {
 }
 
 .no-webp .footer__email::before{
-  background-image: url(../../img/footer/email.png); }
+  background-image: url(../img/footer/email.png); }
 
 .footer__email::before {
   content: "";
@@ -2053,9 +2053,6 @@ address {
   padding-left: 16px;
 }
 
-.no-webp .footer__phone::before{
-  background-image: url(../../img/footer/phone.png); }
-
 .footer__phone::before {
   content: "";
   position: absolute;
@@ -2071,9 +2068,6 @@ address {
   width: 16px;
   height: 16px;
 }
-
-.no-webp .footer__input{
-  background-image: url(../../img/footer/left-arrow.png); }
 
 .footer__input {
   margin-bottom: 12px;
@@ -2846,27 +2840,3 @@ address {
     margin-top: 70px;
   }
 }
-
-.webp .bg{ background-image: url(../img/team/Background.webp); }
-
-.webp .bg-about{ background-image: url(../img/about/Background.webp); }
-
-.webp .link-open::after{ background-image: url(../img/teach/arrow-right.webp); }
-
-.webp .hero{ background-image: url(../img/hero/bg.webp); }
-
-.webp .testimonials__comment::after{ background-image: url(../img/testimonials/braces.webp); }
-
-.webp .info__email::before{ background-image: url(../img/info/email.webp); }
-
-.webp .info__phone::before{ background-image: url(../img/info/phone.webp); }
-
-.webp .info__adrees::before{ background-image: url(../img/info/location.webp); }
-
-.webp .footer__email::before{ background-image: url(../../img/footer/email.webp); }
-
-.webp .footer__phone::before{ background-image: url(../../img/footer/phone.webp); }
-
-.webp .footer__input{ background-image: url(../../img/footer/left-arrow.webp); }
-
-.webp .footer__rights span::before{ background-image: url(../../img/footer/heart.webp); }
