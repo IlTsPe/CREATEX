@@ -26,16 +26,6 @@ close.forEach(e => {
 	})
 });
 
-function closeActive() {
-	nav.classList.remove('header__nav--active');
-	body.classList.remove('js-scroll');
-	overaly.style.display = 'none';
-	modal.classList.add('none')
-	document.body.style.overflow = '';
-}
-
-
-
 overaly.addEventListener('click', () => {
 	nav.classList.remove('header__nav--active');
 	body.classList.remove('js-scroll');
@@ -44,12 +34,18 @@ overaly.addEventListener('click', () => {
 
 document.addEventListener('keydown', (e) => {
 	if (e.code === 'Escape') {
-		nav.classList.remove('header__nav--active');
-		body.classList.remove('js-scroll');
-		overaly.style.display = 'none';
-		modal.classList.add('none')
+		closeActive()
 	}
 });
+
+function closeActive() {
+	nav.classList.remove('header__nav--active');
+	body.classList.remove('js-scroll');
+	overaly.style.display = 'none';
+	modal.classList.add('none')
+	document.body.style.overflow = '';
+}
+
 
 //!modal----------
 
@@ -164,6 +160,32 @@ btn.forEach((i) => {
 		this.nextElementSibling.classList.toggle('hidden');
 		this.classList.toggle('active')
 	});
+	i.addEventListener('keydown', function(e) {
+		if (e.code === 'Digit1') {
+			this.nextElementSibling.classList.toggle('hidden');
+			this.classList.toggle('active')
+		}	
+	});
 });
 
 
+
+
+//!disabled-btn----------
+
+const checkBox = document.querySelector('.js-check'),
+	send = document.querySelector('.questions__btn');
+
+checkBox.addEventListener('click', () => {
+	if (checkBox.checked) {
+		send.removeAttribute('disabled');
+	} else {
+		send.setAttribute('disabled', 'disabled');
+	}
+});
+
+//!phone-mask----------
+
+const telSelector = document.querySelector('input[type="phone"]');
+const inputMask = new Inputmask('+7(999)999-99-99');
+inputMask.mask(telSelector);
