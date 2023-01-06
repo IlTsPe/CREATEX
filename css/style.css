@@ -2396,6 +2396,13 @@ address {
   }
 }
 
+@media (max-width: 1050px) {
+	.questions__container {
+		gap: unset;
+		justify-content: center;
+	}
+}
+
 @media (max-width: 990px) {
   .info-block_list {
     -ms-flex-wrap: wrap;
