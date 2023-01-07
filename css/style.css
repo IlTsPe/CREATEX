@@ -2078,6 +2078,7 @@ address {
   border-radius: 4px;
   padding: 12px 30px 12px 12px;
   color: var(--white-color);
+  background-image:url(../img/footer/left-arrow.png);background-repeat:no-repeat;
   background-repeat: no-repeat;
   background-position: calc(100% - 14px);
 }
@@ -2102,9 +2103,6 @@ address {
   position: relative;
 }
 
-.no-webp .footer__rights span::before{
-  background-image: url(../../img/footer/heart.png); }
-
 .footer__rights span::before {
   content: "";
   position: absolute;
@@ -2113,6 +2111,7 @@ address {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   left: -19px;
+  background-image: url(../img/footer/heart.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 15px;
