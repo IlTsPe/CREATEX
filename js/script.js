@@ -5,20 +5,47 @@ const burger = document.querySelector('.burger'),
 	nav = document.querySelector('.header__nav'),
 	body = document.querySelector('body'),
 	overaly = document.querySelector('.header__overlay'),
-	menuItem = document.querySelectorAll('.header__link');
+	menuItem = document.querySelectorAll('.header__link'),
+	wrapper = document.querySelector('.wrapper'),
+	header = document.querySelector('.header');
 
-menuItem.forEach((e) => {
-	e.addEventListener('click', () => {
-		closeActive()
-	})
-});
+let keys = {
+	ESC: 27
+};
+
 
 burger.addEventListener('click', () => {
 	nav.classList.add('header__nav--active');
 	body.classList.add('js-scroll');
 	overaly.style.display = 'block';
 
+	Array.from(wrapper.children).forEach((child) => {
+		if (child !== header) {
+			child.inert = true;
+		}
+	});
+	nav.inert = false;
 })
+
+function closeActive() {
+	nav.classList.remove('header__nav--active');
+	body.classList.remove('js-scroll');
+	overaly.style.display = 'none';
+	modal.classList.add('none')
+	document.body.style.overflow = '';
+
+	Array.from(wrapper.children).forEach((child) => {
+		if (child !== header) {
+			child.inert = false;
+		}
+	});
+}
+
+menuItem.forEach((e) => {
+	e.addEventListener('click', () => {
+		closeActive()
+	})
+});
 
 close.forEach(e => {
 	e.addEventListener('click', () => {
@@ -27,9 +54,7 @@ close.forEach(e => {
 });
 
 overaly.addEventListener('click', () => {
-	nav.classList.remove('header__nav--active');
-	body.classList.remove('js-scroll');
-	overaly.style.display = 'none';
+	closeActive()
 })
 
 document.addEventListener('keydown', (e) => {
@@ -38,24 +63,25 @@ document.addEventListener('keydown', (e) => {
 	}
 });
 
-function closeActive() {
-	nav.classList.remove('header__nav--active');
-	body.classList.remove('js-scroll');
-	overaly.style.display = 'none';
-	modal.classList.add('none')
-	document.body.style.overflow = '';
-}
+
 
 
 //!modal----------
 
 const logIn = document.querySelector('.header__login'),
 	modal = document.querySelector('.modal'),
-	bodyM = document.querySelector('body');
+	main = document.querySelector('.main');
+
 
 logIn.addEventListener('click', () => {
 	modal.classList.remove('none')
 	document.body.style.overflow = 'hidden';
+	Array.from(main.children).forEach((child) => {
+		if (child !== modal) {
+			child.inert = true;
+		}
+	});
+	modal.inert = false;
 });
 
 modal.addEventListener('click', (e) => {
@@ -63,6 +89,23 @@ modal.addEventListener('click', (e) => {
 	if (target && target.classList.contains('modal')) {
 		modal.classList.add('none')
 		document.body.style.overflow = '';
+		Array.from(main.children).forEach((child) => {
+			if (child !== modal) {
+				child.inert = false;
+			}
+		});
+		modal.inert = true;
+	}
+});
+
+document.addEventListener('keydown', (e) => {
+	if (e.code === 'Escape') {
+		Array.from(main.children).forEach((child) => {
+			if (child !== modal) {
+				child.inert = false;
+			}
+		});
+		modal.inert = true;
 	}
 });
 
@@ -160,11 +203,11 @@ btn.forEach((i) => {
 		this.nextElementSibling.classList.toggle('hidden');
 		this.classList.toggle('active')
 	});
-	i.addEventListener('keydown', function(e) {
+	i.addEventListener('keydown', function (e) {
 		if (e.code === 'Digit1') {
 			this.nextElementSibling.classList.toggle('hidden');
 			this.classList.toggle('active')
-		}	
+		}
 	});
 });
 
@@ -186,6 +229,6 @@ checkBox.addEventListener('click', () => {
 
 //!phone-mask----------
 
-const telSelector = document.querySelector('input[type="phone"]');
+const telSelector = document.querySelector('input[type="tel"]');
 const inputMask = new Inputmask('+7(999)999-99-99');
 inputMask.mask(telSelector);
