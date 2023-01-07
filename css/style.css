@@ -975,7 +975,7 @@ address {
 
 .about__item {
   font-size: 18px;
-  font-weight: 600px;
+  font-weight: 600;
 }
 
 .about__item span {
@@ -1355,7 +1355,7 @@ address {
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
-  color: ver(--header-font-color);
+  color: var(--header-font-color);
   position: relative;
 }
 
