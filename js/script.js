@@ -168,30 +168,45 @@ const testimonials = new Swiper('.testimonials__slider', {
 		nextEl: '.slider-testimonials-next',
 		prevEl: '.slider-testimonials-prev',
 	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+	  },
 });
 
 
-const products = document.querySelectorAll('.testimonials');
 
-if (products) {
-	products.forEach(el => {
-		let currentProduct = el;
-		const imageSwitchItems = currentProduct.querySelectorAll('.testimonials__slide');
-		const imagePagination = currentProduct.querySelector('.pagination');
-		if (imageSwitchItems.length > 1) {
-			imageSwitchItems.forEach((el, index) => {
-				el.setAttribute('data-index', index);
-				imagePagination.innerHTML += `<li class="pagination__item ${index == 0 ? 'pagination-active' : ''}" data-index="${index}"></li>`;
-				el.addEventListener('mouseenter', (e) => {
-					currentProduct.querySelectorAll('.pagination__item').forEach(el => { el.classList.remove('pagination-active') });
-					currentProduct.querySelector(`.pagination__item[data-index="${e.currentTarget.dataset.index}"]`).classList.add('pagination-active');
-				});
+// const slides = document.querySelectorAll('.testimonials__slide'),
+// 	sliderSwiper = document.querySelector('.testimonials__slider'),
+// 	next = document.querySelector('.slider-testimonials-next');
+// prev = document.querySelector('.slider-testimonials-prev');
+// slideIndex = 1;
+// dots = [];
+
+// const pagination = document.createElement('ul');
+// pagination.classList.add('pagination');
+// sliderSwiper.append(pagination);
 
 
-			});
-		}
-	});
-}
+// for (let i = 0; i < slides.length; i++) {
+// 	const dot = document.createElement('li');
+// 	dot.setAttribute('data-pagination', i + 1);
+// 	dot.classList.add('pagination__item');
+// 	if (i == 0) {
+// 		dot.classList.add('pagination-active');
+// 	}
+// 	pagination.append(dot);
+// 	dots.push(dot);
+// }
+
+// next.addEventListener('click', () => {
+// 	dots.forEach(dot => dot.classList.remove('pagination-active'));
+// 	dots[slideIndex++].classList.add('pagination-active');
+// });
+// prev.addEventListener('click', () => {
+// 	dots.forEach(dot => dot.classList.remove('pagination-active'));
+// 	dots[slideIndex--].classList.add('pagination-active');
+// });
 
 //!accordion----------
 

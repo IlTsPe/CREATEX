@@ -1418,7 +1418,7 @@ address {
   right: 20px;
 }
 
-.pagination {
+.swiper-pagination {
   margin-top: 60px;
   left: 0;
   display: -webkit-box;
@@ -1430,7 +1430,7 @@ address {
   z-index: 21;
 }
 
-.pagination__item {
+.swiper-pagination-bullet {
   display: block;
   width: 30px;
   height: 4px;
@@ -1439,7 +1439,7 @@ address {
   background-color: #b3b7bc;
 }
 
-.pagination-active {
+.swiper-pagination-bullet-active {
   background-color: var(--header-font-color);
 }
 
